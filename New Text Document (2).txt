@@ -1,0 +1,211 @@
+<div>
+    <div class="row">
+    <div class="col-md-8 col-md-offset-1">
+      
+        <form class="form-horizontal" role="form">
+         <fieldset>
+
+          <!-- Form Name -->
+          <legend>Add New Customer</legend>
+         <form id="form1" CssClass="form-horizontal" role="form" runat="server">
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder="First Name" name="firstNameTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            
+            <div class="col-sm-6">
+              <asp:TextBox runat="server" placeholder="Last Name" name="lastNameTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-6">
+              <asp:TextBox runat="server" placeholder="Date of Birth"  name="dateTextBox" CssClass="form-control" ID="dateTextBox"></asp:TextBox>
+            </div>
+              <div class="col-sm-6">
+              <asp:TextBox runat="server" placeholder="+880: Contact Number" name="contactTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+          </div>
+
+          <!-- Text input-->
+             <label class="control-label"><u>Gender</u></label>
+
+          <div class="form-group">
+              
+            <div class="col-sm-2">
+               <asp:RadioButton runat="server" GroupName="genderRadioButton" ID="maleRadioButton" Text="Male" CssClass="radio-inline"/>
+
+            </div>
+               <div class="col-sm-2">
+              <asp:RadioButton runat="server" GroupName="genderRadioButton" ID="femaleRadioButton" Text="Female" CssClass="radio-inline"/>
+            </div>
+              <div class="col-sm-2">
+              <asp:RadioButton runat="server" GroupName="genderRadioButton" ID="otherRadioButton" Text="Other" CssClass="radio-inline"/>
+            </div>
+             
+          </div>
+          <div class="form-group">
+              <label class="col-sm-2">Upload Image:</label>
+                 <div class="col-sm-2">
+                  <asp:FileUpload id="customerImageUploadFile" runat="server"  />
+                    </div>
+              <label class="col-sm-offset-2 col-sm-2">Uoload NID:</label>
+               <div class="col-sm-2">
+                  <asp:FileUpload id="customerIdUploadFile" runat="server"  />
+               </div>
+
+          </div>    
+          
+
+<!-- Address Section -->
+          <!-- Form Name -->
+          <legend>Address Details</legend>
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-10">
+              <asp:TextBox runat="server" placeholder="Present Address" name="presentAddressTextBox" CssClass="form-control" TextMode="multiline"></asp:TextBox>
+          </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-10">
+                <asp:TextBox runat="server" placeholder="Permenent Address" name="permenantAddressTextBox" CssClass="form-control" TextMode="multiline"></asp:TextBox>
+             </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-4">
+              <asp:TextBox runat="server" placeholder="City" name="cityTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-sm-2">
+                <asp:TextBox runat="server" placeholder="State" name="stateTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-sm-4">
+               <asp:TextBox runat="server" placeholder="Postal Code" name="postalCodeTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+          </div>
+<!-- Parent/Guadian Contact Section -->
+          <!-- Form Name -->
+          <legend>Father/Husband Information</legend>
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder="Parent/Husband First Name" name="parentFirstNameTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-sm-6">
+              <asp:TextBox runat="server" placeholder="Parent/Husband Last Name" name="parentLastNameTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+          
+          </div>
+          <div class="form-group">
+            <div class="col-sm-4">
+                <asp:TextBox runat="server" placeholder="Contact Number" name="parentContactNoTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-sm-4">
+                <asp:TextBox runat="server" placeholder="Parent/Husband Email" name="parentEmailTextTextBox" CssClass="form-control" ID="parentEmailTextTextBox"></asp:TextBox>
+            </div>
+           </div>
+           
+
+<!-- Emergency Contact Section -->
+          <!-- Form Name -->
+         
+          <legend>Guarentor Information</legend>
+         <!-- Text input-->
+          <div class="form-group">
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder=" First Name" name="guarenterFirstNameTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-sm-6">
+              <asp:TextBox runat="server" placeholder=" Last Name" name="guarentertLastNameTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+           
+          </div>
+          <div class="form-group">
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder="Contact Number" name="guarenterContactNoTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder="Email" name="guarenterEmailTextTextBox" CssClass="form-control" ID="TextBox1"></asp:TextBox>
+            </div>
+              </div>
+               <div class="form-group">
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder="Account Number" name="guarenterContactNoTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+           </div>
+           <div class="form-group">
+              <label class="col-sm-2">Upload Image:</label>
+                 <div class="col-sm-2">
+                  <asp:FileUpload id="guarenterImageFileUpload" runat="server"  />
+                    </div>
+              <label class="col-sm-offset-2 col-sm-2">Uoload NID:</label>
+               <div class="col-sm-2">
+                  <asp:FileUpload id="guarenterNidFileUpload" runat="server"  />
+               </div>
+
+          </div>   
+              
+  <!-- Form Name -->
+        
+
+          <legend>Account Informetion</legend>
+         <!-- Text input-->
+           <div class="form-group">
+               <div class="col-sm-6">
+                   <asp:DropDownList ID="loanDepositeSelectDropDownList" runat="server" name="branchesDropDownList" CssClass="form-control">
+                        <asp:ListItem Enabled="true" Text="Select Loan/Deposite" Value="-1"></asp:ListItem>
+                      <asp:ListItem Text="Loan" Value="1"></asp:ListItem>
+                      <asp:ListItem Text="Deposite" Value="2"></asp:ListItem>
+                  </asp:DropDownList>
+               </div>
+               <div class="col-sm-6">
+                   <asp:DropDownList ID="loanDepositeOptionDropDownList" runat="server" name="groupDropDownList" CssClass="form-control">
+                    <asp:ListItem Enabled="true" Text="Select Group" Value="-1"></asp:ListItem>
+                     <asp:ListItem Text="F-1" Value="1"></asp:ListItem>
+                      <asp:ListItem Text="F-2" Value="2"></asp:ListItem>
+                  </asp:DropDownList>
+               </div>
+           </div>
+           
+               <div class="form-group">
+            <div class="col-sm-6">
+                <asp:TextBox runat="server" placeholder="Customer Account No." name="guarenterContactNoTextBox" CssClass="form-control"></asp:TextBox>
+            </div>
+             
+           </div>
+           <div class="form-group">
+               <div class="col-sm-6">
+                   <asp:DropDownList ID="branchesDropDownList" runat="server" name="branchesDropDownList" CssClass="form-control">
+                    <asp:ListItem Enabled="true" Text="Select Branches" Value="-1"></asp:ListItem>
+                     <asp:ListItem Text="Dhaka" Value="1"></asp:ListItem>
+                      <asp:ListItem Text="Barishal" Value="2"></asp:ListItem>
+                  </asp:DropDownList>
+               </div>
+               <div class="col-sm-6">
+                   <asp:DropDownList ID="groupDropDownList" runat="server" name="groupDropDownList" CssClass="form-control">
+                    <asp:ListItem Enabled="true" Text="Select Group" Value="-1"></asp:ListItem>
+                     <asp:ListItem Text="F-1" Value="1"></asp:ListItem>
+                      <asp:ListItem Text="F-2" Value="2"></asp:ListItem>
+                  </asp:DropDownList>
+               </div>
+           </div>
+           
+            
+<!-- Command -->
+          <div class="form-group">
+            <div class="col-sm-5 col-sm-offset-1">
+              <div class="pull-right">
+                <button type="submit" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+           </form>  
+        </fieldset>
+            </form>
+    </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->
+</div>
