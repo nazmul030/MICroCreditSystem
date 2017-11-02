@@ -56,7 +56,7 @@
                       <asp:TextBox ID="customerViewMobileNoTextBox" runat="server" CssClass="form-control input-sm"  disabled="disabled" Font-Size="Medium"></asp:TextBox>	
 					</div>
 					<div class="form-group">
-					  <label for="">Customer Address</label>
+					  <label for="">Customer Permenant Address</label>
 					    <asp:TextBox runat="server" ID="customerViewAddressTextBox" CssClass="form-control input-sm" TextMode="MultiLine" disabled="disabled"/>
 
 					</div>
