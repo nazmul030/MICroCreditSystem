@@ -45,3 +45,9 @@ F:\MLM\MICroCreditSystem\LogIn\bin\LogIn.dll
 F:\MLM\MICroCreditSystem\LogIn\bin\LogIn.pdb
 F:\MLM\MICroCreditSystem\LogIn\obj\Debug\LogIn.dll
 F:\MLM\MICroCreditSystem\LogIn\obj\Debug\LogIn.pdb
+C:\Users\User\Desktop\Micro Credit System\MICroCreditSystem\LogIn\bin\LogIn.dll.config
+C:\Users\User\Desktop\Micro Credit System\MICroCreditSystem\LogIn\bin\LogIn.dll
+C:\Users\User\Desktop\Micro Credit System\MICroCreditSystem\LogIn\bin\LogIn.pdb
+C:\Users\User\Desktop\Micro Credit System\MICroCreditSystem\LogIn\obj\Debug\LogIn.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Micro Credit System\MICroCreditSystem\LogIn\obj\Debug\LogIn.dll
+C:\Users\User\Desktop\Micro Credit System\MICroCreditSystem\LogIn\obj\Debug\LogIn.pdb
